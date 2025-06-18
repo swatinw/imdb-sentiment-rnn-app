@@ -37,13 +37,13 @@ def preprocess_text(text):
 # Streamlit app
 import streamlit as st
 
-st.title("IMDB Movie Review Sentiment Analysis")
-st.write("Enter a movie review to classify it as positive or negative.")
+st.title("🎬 IMDB Movie Review Sentiment Analysis")
+st.write("📝 Enter a movie review below and let the AI classify it as 📈 Positive or 📉 Negative!")
 
 # User input
-user_input = st.text_area("Movie Review")
+user_input = st.text_area("🗣️ Movie Review")
 
-if st.button("Classify"):
+if st.button("🔍 Classify Sentiment"):
     if user_input.strip() == "":
         st.warning("Please enter a valid review.")
     else:
@@ -55,7 +55,7 @@ if st.button("Classify"):
         sentiment = "Positive" if prediction[0][0] > 0.5 else "Negative"
 
         # Display the result
-        st.write(f"Sentiment: {sentiment}")
+        st.write(f"🧠 **Sentiment:** `{sentiment}`")
         st.write(f"Prediction Score: {prediction[0][0]:.4f}")
 else:
-    st.write("Please enter a movie review.")
+    st.info("💡 Tip: Write a short review above and click the button to classify!")
