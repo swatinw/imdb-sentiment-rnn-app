@@ -66,7 +66,7 @@ streamlit run imdb_sentiment_app.py
 
 ## 🌐 Live Demo
 
-👉 [Click here to try the live app](https://your-streamlit-app-url)
+👉 https://imdb-sentiment-rnn-app-jevkgjpzjvh6muq7tuzgrm.streamlit.app/
 
 ---
 
